@@ -1,0 +1,81 @@
+/* Resetting default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    
+    background-color:rgba(165, 242, 228, 0.4);
+}
+/* Basic styling for header */
+header {
+    background-color:rgba(141, 206, 205, 1); /* Green color */
+    color:black;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Basic styling for pricing section */
+.pricing {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+/* Styling for each pricing option */
+.pricing-option {
+    background-color:rgba(78,98,101,0.9);
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    text-align: center;
+    width: 30%;
+    transition: all 0.3s ease;
+}
+
+/* Hover effect for pricing option */
+.pricing-option:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.2);
+    
+}
+
+/* Styling for price */
+.price {
+    font-size: 28px;
+    font-weight: bold;
+    color:aliceblue; /* Green color */
+}
+
+/* Styling for unit */
+.unit {
+    font-size: 16px;
+    font-weight: normal;
+    color:rgba(255, 255, 255, 0.86);
+}
+
+/* Styling for features list */
+ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: left;
+    margin-top: 20px;
+}
+
+ul li {
+    margin-bottom: 15px;
+    color:aliceblue;
+}
+
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+    .pricing {
+        flex-direction: column;
+        align-items: center;
+    }
+    .pricing-option {
+        margin-bottom: 20px;
+        width: 80%;
+    }
+}
